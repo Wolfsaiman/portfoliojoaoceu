@@ -51,7 +51,18 @@
 <br></br>
 			 <div class="col">
 			 <div class="shadow-sm">
-		<iframe src="https://player.twitch.tv/?video=1091761804&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" height="325" width="419"></iframe>
+		<!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed"></div>
+
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+<script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    video: "1091761804"
+  });
+</script>
               </div>
             </div>
           </div>
