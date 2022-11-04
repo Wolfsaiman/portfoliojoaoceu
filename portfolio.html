@@ -51,12 +51,18 @@
 <br></br>
 			 <div class="col">
 			 <div class="shadow-sm">
-		<iframe
-    src="https://www.twitch.tv/videos/1091761804?filter=uploads&sort=time"
-    height="325"
-    width="419"
-    allowfullscreen>
-</iframe>
+		<!-- Add a placeholder for the Twitch embed -->
+<div id="portfoliojoaoceu"></div>
+
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+<script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    video: "1091761804"
+  });
+</script>
               </div>
             </div>
           </div>
